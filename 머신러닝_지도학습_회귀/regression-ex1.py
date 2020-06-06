@@ -7,6 +7,7 @@ y=np.array([0, 0.8, 0.9, 0.1, -0.8, -1])
 n=np.size(x)
 
 # 수식으로 도출된 기울기와 y절편
+# (편미분을 활용한 식, np.polyfit과 동일한 역할이다.)
 b=(n*np.sum(x*y)-(np.sum(x)*np.sum(y)))/(n*np.sum(x**2)-(np.sum(x))**2)
 a=(np.sum(y)-b*np.sum(x))/n
 # b= -0.30285714285714288
